@@ -262,8 +262,8 @@ function init() {
   // Light calibration: total intensity kept near 1.0 so rendered surface color
   // matches the chosen hex value. Ambient carries most of the load for color
   // accuracy; directional lights are subtle — just enough to show 3D geometry.
-  scene.add(new THREE.AmbientLight(0xffffff, 0.50));
-  const key = new THREE.DirectionalLight(0xffffff, 0.28);
+  scene.add(new THREE.AmbientLight(0xffffff, 0.25));
+  const key = new THREE.DirectionalLight(0xffffff, 0.08);
   key.position.set(1.5, 2, 5); key.castShadow = true; scene.add(key);
   const fill = new THREE.DirectionalLight(0xffffff, 0.08);
   fill.position.set(-3, 1, 2); scene.add(fill);
